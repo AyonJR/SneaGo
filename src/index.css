@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&family=Roboto:wght@300;400;700&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-font-heading {
+  font-family: "Squada One", sans-serif;
+}
+
+.custom-font-body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300; /* Use font-light with this class */
+}
