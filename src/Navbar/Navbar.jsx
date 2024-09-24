@@ -4,12 +4,12 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="relative custom-font-heading bg-white shadow dark:bg-black">
+    <nav className="relative  bg-white shadow dark:bg-black">
       <div className="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
         <div className="flex items-center justify-between">
           <a href="#">
             {/* <img className="w-auto h-6 sm:h-7" src="https://merakiui.com/images/full-logo.svg" alt="Logo" /> */}
-            <p className='text-white text-3xl font-medium'>Snea<span className='text-blue-600'>Go.</span></p>
+            <p className='text-white custom-font-heading text-3xl font-medium'>Snea<span className='text-blue-600'>Go.</span></p>
           </a>
 
           {/* Mobile menu button */}
@@ -39,17 +39,17 @@ export default function Navbar() {
             isOpen ? 'translate-x-0 opacity-100' : 'opacity-0 -translate-x-full'
           }`}
         >
-          <div className="flex flex-col md:flex-row md:mx-6">
-            <a className="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">
+          <div className="flex flex-col  custom-font-body md:flex-row md:mx-6">
+            <a className="my-2 font-semibold text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">
               Home
             </a>
-            <a className="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">
+            <a className="my-2 font-semibold text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">
               Shop
             </a>
-            <a className="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">
+            <a className="my-2 font-semibold  text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">
               Contact
             </a>
-            <a className="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">
+            <a className="my-2 font-semibold text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">
               About
             </a>
           </div>
