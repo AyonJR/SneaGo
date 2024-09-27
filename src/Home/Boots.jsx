@@ -62,19 +62,18 @@ const Boots = () => {
       </div>
 
       {/* Display Boots */}
-      <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
         {filterBootsByBrand(selectedBrand).map((boot) => (
           <div
             key={boot._id}
-            className="bg-white p-4 rounded-lg shadow-lg flex flex-col items-center"
+            className="bg-transparent p-4 rounded-lg shadow-lg flex flex-col items-center"
           >
             <img
               className="w-32 h-32 object-contain"
               src={boot.image}
               alt={boot.name}
             />
-            <h2 className="text-lg font-semibold mt-2">{boot.name}</h2>
-            <p className="text-gray-600">{boot.brand}</p>
+            <h2 className="text-lg text-white font-semibold mt-2">{boot.name}</h2>
             <p className="text-blue-600 font-bold">${boot.price}</p>
           </div>
         ))}
